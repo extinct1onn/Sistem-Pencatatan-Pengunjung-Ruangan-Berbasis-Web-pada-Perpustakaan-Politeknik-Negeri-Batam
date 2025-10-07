@@ -6,11 +6,6 @@ Aplikasi ini memiliki dua peran utama: **Admin** untuk manajemen pengguna dan la
 
 ---
 
-## 📸 Tampilan Aplikasi (Screenshot)
-
-<!-- Tambahkan screenshot di sini -->
-<img width="1920" height="1080" alt="LibraryWeb Dashboard" src="https://github.com/user-attachments/assets/your-screenshot-here.png" />
-
 ---
 
 ## 🚀 Fitur Utama
@@ -82,7 +77,7 @@ Untuk menjalankan proyek ini di komputer Anda, ikuti langkah-langkah berikut:
 
 ### 1️⃣ Clone Repositori
 ```bash
-git clone https://github.com/YourUsername/libraryweb.git
+git clone https://github.com/extinct1onn/Sistem-Pencatatan-Pengunjung-Ruangan-Berbasis-Web-pada-Perpustakaan-Politeknik-Negeri-Batam
 ```
 
 ### 2️⃣ Pindahkan Folder Proyek
@@ -155,7 +150,7 @@ Setelah import database, gunakan akun berikut:
 
 | Role | Username | Password |
 |------|----------|----------|
-| **Admin** | `admin` | `admin123` |
+| **Admin** | `Edward` | `12345678` |
 
 > ⚠️ **Penting**: Ganti password default setelah login pertama!
 
@@ -226,7 +221,7 @@ libraryweb/
 │   ├── rekapitulasi.css            # Style laporan rekapitulasi
 │   ├── scan.css                     # Style halaman scan QR
 │   ├── session_timeout.css          # Style notifikasi timeout
-│   └── style.css                    # Style global aplikasi
+│   └── style.css                    # Style login 
 │
 ├── database/                         # Folder Database
 │   └── libraryweb.sql               # File SQL database
@@ -242,11 +237,16 @@ libraryweb/
 ├── js/                              # Folder JavaScript
 │   └── session_timeout.js           # Handler session timeout otomatis
 │
+├── .git/                            # Git version control
+│
 ├── admin_dashboard.php               # Dashboard admin dengan statistik
 ├── catat_kunjungan_scan.php         # Halaman scan QR code untuk user
 ├── catat_kunjungan.php              # Form pencatatan kunjungan manual
 ├── check_session.php                # Validasi session pengguna
 ├── edit_pengguna.php                # Form edit data pengguna
+├── export_ruang_baca.php            # Export Excel data Ruang Baca (.xlsx)
+├── export_ruang_diskusi.php         # Export Excel data Ruang Diskusi (.xlsx)
+├── export_ruang_komputer.php        # Export Excel data Ruang Komputer (.xlsx)
 ├── extend_session.php               # Perpanjang durasi session
 ├── laporan_statistik.php            # Halaman laporan & statistik kunjungan
 ├── login.php                        # Halaman login (admin only)
@@ -254,11 +254,11 @@ libraryweb/
 ├── manajemen_pengguna.php           # CRUD manajemen pengguna
 ├── process_scan.php                 # Proses scan QR & validasi NIM
 ├── profile.php                      # Halaman profil admin
+├── README.md                        # Dokumentasi project
 ├── rekapitulasi_ruang_baca.php      # Rekapitulasi kunjungan ruang baca
 ├── rekapitulasi_ruang_diskusi.php   # Rekapitulasi kunjungan ruang diskusi
 ├── rekapitulasi_ruang_komputer.php  # Rekapitulasi kunjungan ruang komputer
 └── scan_success.php                 # Halaman konfirmasi scan berhasil
-```
 
 ---
 
